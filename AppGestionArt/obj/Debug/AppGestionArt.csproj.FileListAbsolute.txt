@@ -1,0 +1,13 @@
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\AppGestionArt.exe.config
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\AppGestionArt.exe
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\AppGestionArt.pdb
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.csproj.AssemblyReference.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.Properties.Resources.resources
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.csproj.GenerateResource.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.csproj.CoreCompileInputs.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.exe
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.pdb
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.Form1.resources
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.FrmSerch.resources
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.FrmAdd.resources
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.FrmDelete.resources
