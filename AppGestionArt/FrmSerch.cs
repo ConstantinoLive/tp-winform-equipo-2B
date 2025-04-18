@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Conexion;
+using Dominios;
 
 namespace AppGestionArt
 {
@@ -17,6 +19,118 @@ namespace AppGestionArt
             InitializeComponent();
         }
 
-       
+        private List<Articulo> listaArticulos;
+
+        private void FrmSerch_Load(object sender, EventArgs e)
+        {
+            /* CnxnTbArticulo cnxnTbArticulo = new CnxnTbArticulo();
+             try
+             {
+                 listaArticulos = new List<Articulo>();  
+
+                 List<Articulo> codigos = cnxnTbArticulo.listarCodArt();
+                 codigos.Insert(0, new Articulo { CodArticulo = "" });
+                 cBoxCodigo.DataSource = codigos;
+                 cBoxCodigo.DisplayMember = "CodArticulo"; 
+                 cBoxCodigo.ValueMember = "CodArticulo";
+
+                 List<Articulo> nombre = cnxnTbArticulo.listarNombreArt();
+                 nombre.Insert(0, new Articulo { CodArticulo = "" });
+                 cBoxNombre.DataSource = nombre;
+                 cBoxNombre.DisplayMember = "Nombre"; 
+                 cBoxNombre.ValueMember = "Nombre";
+
+
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show("Error al cargar los códigos: " + ex.Message);
+                 //throw;
+             }*/
+
+            ArticuloDatos datos = new ArticuloDatos();
+            try
+            {
+                listaArticulos = datos.listar();
+
+                // ComboBox Código
+                List<Articulo> codigos = new List<Articulo>();
+                HashSet<string> codigosUnicos = new HashSet<string>();
+                foreach (var art in listaArticulos)
+                {
+                    if (codigosUnicos.Add(art.CodArticulo)) // Agrega si no existía
+                    {
+                        codigos.Add(new Articulo { CodArticulo = art.CodArticulo });
+                    }
+                }
+                codigos.Insert(0, new Articulo { CodArticulo = "" }); 
+                cBoxCodigo.DataSource = codigos;
+                cBoxCodigo.DisplayMember = "CodArticulo";
+                cBoxCodigo.ValueMember = "CodArticulo";
+
+                // ComboBox Nombre
+                List<Articulo> nombres = new List<Articulo>();
+                HashSet<string> nombresUnicos = new HashSet<string>();
+                foreach (var art in listaArticulos)
+                {
+                    if (nombresUnicos.Add(art.Nombre))
+                    {
+                        nombres.Add(new Articulo { Nombre = art.Nombre });
+                    }
+                }
+                nombres.Insert(0, new Articulo { Nombre = "" }); 
+                cBoxNombre.DataSource = nombres;
+                cBoxNombre.DisplayMember = "Nombre";
+                cBoxNombre.ValueMember = "Nombre";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message);
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string codSeleccionado = cBoxCodigo.Text;
+            string nombreSeleccionado = cBoxNombre.Text;
+
+            Articulo encontrado = listaArticulos.FirstOrDefault(x =>
+                (string.IsNullOrEmpty(codSeleccionado) || x.CodArticulo == codSeleccionado) &&
+                (string.IsNullOrEmpty(nombreSeleccionado) || x.Nombre == nombreSeleccionado));
+
+            if (encontrado != null)
+            {
+                lblResultadoID.Text = encontrado.IdProductos.ToString();
+                lblResultadoCodigo.Text = encontrado.CodArticulo;
+                lblResultadoNombre.Text = encontrado.Nombre;
+                tBoxResultadoDescripcion.Text = encontrado.Descripcion;
+                lblResultadoMarca.Text = encontrado.Marca?.marca ?? "";
+                lblResultadoCategoria.Text = encontrado.Categoria?.categoria ?? "";
+                lblResultadoPrecio.Text = encontrado.Precio.ToString("C");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ningún artículo con los criterios seleccionados.", "Resultado no encontrado", MessageBoxButtons.OK);
+
+                lblResultadoID.Text =
+                lblResultadoCodigo.Text =
+                lblResultadoNombre.Text =
+                tBoxResultadoDescripcion.Text =
+                lblResultadoMarca.Text =
+                lblResultadoCategoria.Text =
+                lblResultadoPrecio.Text = "";
+            }
+
+            try
+            {
+                pcbSerch.Load(encontrado.UrlImagen);
+            }
+            catch (Exception)
+            {
+                pcbSerch.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
+            }
+
+
+        }
     }
 }

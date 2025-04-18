@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
-using System.Windows.Forms;
+//using System.Windows.Forms;
+using Dominios;
 
 
 
 namespace AppGestionArt
 {
-    internal class ArticuloDatos
+    public class ArticuloDatos
     {
         public List<Articulo> listar()
         {
@@ -53,8 +54,8 @@ namespace AppGestionArt
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar la base de datos");
-                throw;
+                //MessageBox.Show("Error al cargar la base de datos");
+                throw ex;
               
             }
 

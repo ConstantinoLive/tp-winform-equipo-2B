@@ -1,0 +1,6 @@
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Dominios\bin\Debug\Dominios.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Dominios\bin\Debug\Dominios.pdb
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Dominios\obj\Debug\Dominios.csproj.AssemblyReference.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Dominios\obj\Debug\Dominios.csproj.CoreCompileInputs.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Dominios\obj\Debug\Dominios.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Dominios\obj\Debug\Dominios.pdb

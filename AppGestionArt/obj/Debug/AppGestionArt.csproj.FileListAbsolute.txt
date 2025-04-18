@@ -11,3 +11,8 @@ D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debu
 D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.FrmSerch.resources
 D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.FrmAdd.resources
 D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.FrmDelete.resources
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\Dominios.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\Dominios.pdb
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\obj\Debug\AppGestionArt.csproj.CopyComplete
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\Conexion.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\AppGestionArt\bin\Debug\Conexion.pdb

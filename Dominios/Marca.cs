@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGestionArt
+namespace Dominios
 {
-    internal class Categoria
+    public class Marca
     {
-        public int Id { get; set; }
-        public string categoria { get; set; }
+        public int id { get; set; }
+        public string marca { get; set; }
 
         public override string ToString()
         {
-            return categoria;
+            return marca;
         }
     }
 }

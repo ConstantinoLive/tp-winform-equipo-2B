@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppGestionArt
+namespace Dominios
 {
-    internal class Articulo
+    public class Articulo
     {
         public int IdProductos { get; set; }
         public string CodArticulo { get; set; }

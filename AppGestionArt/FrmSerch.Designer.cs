@@ -117,6 +117,7 @@
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblRID
             // 
@@ -198,9 +199,9 @@
             this.lblRPrecio.ForeColor = System.Drawing.Color.White;
             this.lblRPrecio.Location = new System.Drawing.Point(120, 505);
             this.lblRPrecio.Name = "lblRPrecio";
-            this.lblRPrecio.Size = new System.Drawing.Size(89, 25);
+            this.lblRPrecio.Size = new System.Drawing.Size(73, 25);
             this.lblRPrecio.TabIndex = 12;
-            this.lblRPrecio.Text = "Precio: $";
+            this.lblRPrecio.Text = "Precio:";
             // 
             // lblResultadoID
             // 
@@ -210,9 +211,8 @@
             this.lblResultadoID.ForeColor = System.Drawing.Color.Gray;
             this.lblResultadoID.Location = new System.Drawing.Point(176, 115);
             this.lblResultadoID.Name = "lblResultadoID";
-            this.lblResultadoID.Size = new System.Drawing.Size(27, 20);
+            this.lblResultadoID.Size = new System.Drawing.Size(0, 20);
             this.lblResultadoID.TabIndex = 13;
-            this.lblResultadoID.Text = "25";
             // 
             // lblResultadoCodigo
             // 
@@ -222,9 +222,8 @@
             this.lblResultadoCodigo.ForeColor = System.Drawing.Color.Gray;
             this.lblResultadoCodigo.Location = new System.Drawing.Point(176, 161);
             this.lblResultadoCodigo.Name = "lblResultadoCodigo";
-            this.lblResultadoCodigo.Size = new System.Drawing.Size(72, 20);
+            this.lblResultadoCodigo.Size = new System.Drawing.Size(0, 20);
             this.lblResultadoCodigo.TabIndex = 14;
-            this.lblResultadoCodigo.Text = "1111111";
             // 
             // lblResultadoNombre
             // 
@@ -234,9 +233,8 @@
             this.lblResultadoNombre.ForeColor = System.Drawing.Color.Gray;
             this.lblResultadoNombre.Location = new System.Drawing.Point(176, 208);
             this.lblResultadoNombre.Name = "lblResultadoNombre";
-            this.lblResultadoNombre.Size = new System.Drawing.Size(72, 20);
+            this.lblResultadoNombre.Size = new System.Drawing.Size(0, 20);
             this.lblResultadoNombre.TabIndex = 15;
-            this.lblResultadoNombre.Text = "dasdasd";
             // 
             // lblResultadoMarca
             // 
@@ -246,9 +244,8 @@
             this.lblResultadoMarca.ForeColor = System.Drawing.Color.Gray;
             this.lblResultadoMarca.Location = new System.Drawing.Point(176, 389);
             this.lblResultadoMarca.Name = "lblResultadoMarca";
-            this.lblResultadoMarca.Size = new System.Drawing.Size(90, 20);
+            this.lblResultadoMarca.Size = new System.Drawing.Size(0, 20);
             this.lblResultadoMarca.TabIndex = 16;
-            this.lblResultadoMarca.Text = "dasdasdad";
             // 
             // lblResultadoCategoria
             // 
@@ -258,9 +255,8 @@
             this.lblResultadoCategoria.ForeColor = System.Drawing.Color.Gray;
             this.lblResultadoCategoria.Location = new System.Drawing.Point(176, 433);
             this.lblResultadoCategoria.Name = "lblResultadoCategoria";
-            this.lblResultadoCategoria.Size = new System.Drawing.Size(68, 20);
+            this.lblResultadoCategoria.Size = new System.Drawing.Size(0, 20);
             this.lblResultadoCategoria.TabIndex = 17;
-            this.lblResultadoCategoria.Text = "jhkhkjhk";
             // 
             // lblResultadoPrecio
             // 
@@ -270,9 +266,8 @@
             this.lblResultadoPrecio.ForeColor = System.Drawing.Color.Gray;
             this.lblResultadoPrecio.Location = new System.Drawing.Point(215, 509);
             this.lblResultadoPrecio.Name = "lblResultadoPrecio";
-            this.lblResultadoPrecio.Size = new System.Drawing.Size(63, 20);
+            this.lblResultadoPrecio.Size = new System.Drawing.Size(0, 20);
             this.lblResultadoPrecio.TabIndex = 18;
-            this.lblResultadoPrecio.Text = "265656";
             // 
             // tBoxResultadoDescripcion
             // 
@@ -321,6 +316,7 @@
             this.Name = "FrmSerch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar registo";
+            this.Load += new System.EventHandler(this.FrmSerch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbSerch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

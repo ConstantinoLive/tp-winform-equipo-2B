@@ -1,0 +1,9 @@
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\obj\Debug\Conexion.csproj.AssemblyReference.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\obj\Debug\Conexion.csproj.CoreCompileInputs.cache
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\bin\Debug\Conexion.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\bin\Debug\Conexion.pdb
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\bin\Debug\Dominios.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\bin\Debug\Dominios.pdb
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\obj\Debug\Conexion.csproj.CopyComplete
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\obj\Debug\Conexion.dll
+D:\Estudio\UTN\Programacion III Ejercicios\TP\TP_WinForms\Conexion\obj\Debug\Conexion.pdb
