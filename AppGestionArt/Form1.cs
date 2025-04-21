@@ -21,6 +21,13 @@ namespace AppGestionArt
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            Cargar();
+
+        }
+
+        private void Cargar()
+        {
             ArticuloDatos datos = new ArticuloDatos();
             List<Articulo> lista = datos.listar();
             dgvArticulos.DataSource = datos.listar();
@@ -64,8 +71,31 @@ namespace AppGestionArt
 
         private void btntrash_Click(object sender, EventArgs e)
         {
-            FrmDelete frmDel = new FrmDelete(); 
-            frmDel.ShowDialog();
+            CnxnTbArticulo articulosDatos = new CnxnTbArticulo();
+            CnxnTbImagenes imagenesDatos = new CnxnTbImagenes();
+            Articulo seleccionado = new Articulo();
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad desea eliminar el articulo?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    articulosDatos.eliminarFisico(seleccionado.IdProductos);
+                    imagenesDatos.eliminarFisico(seleccionado.IdProductos);
+                    Cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
+        private void btnmodify_Click(object sender, EventArgs e)
+        {
+            FrmModify frmModify = new FrmModify();  
+            frmModify.ShowDialog();
         }
     }
 }

@@ -39,6 +39,28 @@ namespace Conexion
                 throw ex;
             }
         }
+
+        public void EjecutarAccion()
+        {
+            command.Connection = connection;
+
+            try
+            {
+                connection.Open ();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void SetearParametros(string nombre, object valor)
+        {
+            command.Parameters.AddWithValue(nombre, valor);
+        }
+
         public SqlDataReader Reader
         {
             get { return reader; }

@@ -43,11 +43,14 @@
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
     <Compile Include="ArticuloDatos.cs" />
+    <Compile Include="CategoriaDatos.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="CnxnTbArticulo.cs" />
     <Compile Include="CnxnTbCategorias.cs" />
     <Compile Include="CnxnTbImagenes.cs" />
     <Compile Include="CnxnTbMarcas.cs" />
+    <Compile Include="ImagenesDatos.cs" />
+    <Compile Include="MarcaDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

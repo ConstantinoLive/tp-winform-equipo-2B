@@ -67,11 +67,11 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblCodigo.Location = new System.Drawing.Point(47, 41);
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCodigo.Location = new System.Drawing.Point(28, 37);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(75, 25);
+            this.lblCodigo.Size = new System.Drawing.Size(92, 29);
             this.lblCodigo.TabIndex = 1;
             this.lblCodigo.Text = "Código";
             // 
@@ -79,43 +79,51 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNombre.Location = new System.Drawing.Point(350, 41);
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNombre.Location = new System.Drawing.Point(350, 37);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(81, 25);
+            this.lblNombre.Size = new System.Drawing.Size(101, 29);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
             // cBoxCodigo
             // 
             this.cBoxCodigo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cBoxCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBoxCodigo.FormattingEnabled = true;
             this.cBoxCodigo.Items.AddRange(new object[] {
             ""});
-            this.cBoxCodigo.Location = new System.Drawing.Point(125, 41);
+            this.cBoxCodigo.Location = new System.Drawing.Point(125, 32);
             this.cBoxCodigo.Name = "cBoxCodigo";
-            this.cBoxCodigo.Size = new System.Drawing.Size(190, 24);
+            this.cBoxCodigo.Size = new System.Drawing.Size(190, 37);
             this.cBoxCodigo.TabIndex = 3;
             // 
             // cBoxNombre
             // 
+            this.cBoxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBoxNombre.FormattingEnabled = true;
-            this.cBoxNombre.Location = new System.Drawing.Point(434, 41);
+            this.cBoxNombre.Location = new System.Drawing.Point(454, 32);
             this.cBoxNombre.Name = "cBoxNombre";
-            this.cBoxNombre.Size = new System.Drawing.Size(190, 24);
+            this.cBoxNombre.Size = new System.Drawing.Size(190, 37);
             this.cBoxNombre.TabIndex = 4;
             // 
             // btnBuscar
             // 
             this.btnBuscar.AutoSize = true;
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(675, 41);
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(697, 31);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 28);
+            this.btnBuscar.Size = new System.Drawing.Size(111, 38);
             this.btnBuscar.TabIndex = 5;
             this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -197,7 +205,7 @@
             this.lblRPrecio.BackColor = System.Drawing.Color.Transparent;
             this.lblRPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRPrecio.ForeColor = System.Drawing.Color.White;
-            this.lblRPrecio.Location = new System.Drawing.Point(120, 505);
+            this.lblRPrecio.Location = new System.Drawing.Point(136, 505);
             this.lblRPrecio.Name = "lblRPrecio";
             this.lblRPrecio.Size = new System.Drawing.Size(73, 25);
             this.lblRPrecio.TabIndex = 12;
@@ -207,73 +215,74 @@
             // 
             this.lblResultadoID.AutoSize = true;
             this.lblResultadoID.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultadoID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoID.ForeColor = System.Drawing.Color.Gray;
-            this.lblResultadoID.Location = new System.Drawing.Point(176, 115);
+            this.lblResultadoID.Location = new System.Drawing.Point(186, 111);
             this.lblResultadoID.Name = "lblResultadoID";
-            this.lblResultadoID.Size = new System.Drawing.Size(0, 20);
+            this.lblResultadoID.Size = new System.Drawing.Size(0, 25);
             this.lblResultadoID.TabIndex = 13;
             // 
             // lblResultadoCodigo
             // 
             this.lblResultadoCodigo.AutoSize = true;
             this.lblResultadoCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultadoCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoCodigo.ForeColor = System.Drawing.Color.Gray;
-            this.lblResultadoCodigo.Location = new System.Drawing.Point(176, 161);
+            this.lblResultadoCodigo.Location = new System.Drawing.Point(186, 156);
             this.lblResultadoCodigo.Name = "lblResultadoCodigo";
-            this.lblResultadoCodigo.Size = new System.Drawing.Size(0, 20);
+            this.lblResultadoCodigo.Size = new System.Drawing.Size(0, 25);
             this.lblResultadoCodigo.TabIndex = 14;
             // 
             // lblResultadoNombre
             // 
             this.lblResultadoNombre.AutoSize = true;
             this.lblResultadoNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultadoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoNombre.ForeColor = System.Drawing.Color.Gray;
-            this.lblResultadoNombre.Location = new System.Drawing.Point(176, 208);
+            this.lblResultadoNombre.Location = new System.Drawing.Point(186, 203);
             this.lblResultadoNombre.Name = "lblResultadoNombre";
-            this.lblResultadoNombre.Size = new System.Drawing.Size(0, 20);
+            this.lblResultadoNombre.Size = new System.Drawing.Size(0, 25);
             this.lblResultadoNombre.TabIndex = 15;
             // 
             // lblResultadoMarca
             // 
             this.lblResultadoMarca.AutoSize = true;
             this.lblResultadoMarca.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultadoMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoMarca.ForeColor = System.Drawing.Color.Gray;
-            this.lblResultadoMarca.Location = new System.Drawing.Point(176, 389);
+            this.lblResultadoMarca.Location = new System.Drawing.Point(186, 384);
             this.lblResultadoMarca.Name = "lblResultadoMarca";
-            this.lblResultadoMarca.Size = new System.Drawing.Size(0, 20);
+            this.lblResultadoMarca.Size = new System.Drawing.Size(0, 25);
             this.lblResultadoMarca.TabIndex = 16;
             // 
             // lblResultadoCategoria
             // 
             this.lblResultadoCategoria.AutoSize = true;
             this.lblResultadoCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultadoCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoCategoria.ForeColor = System.Drawing.Color.Gray;
-            this.lblResultadoCategoria.Location = new System.Drawing.Point(176, 433);
+            this.lblResultadoCategoria.Location = new System.Drawing.Point(186, 428);
             this.lblResultadoCategoria.Name = "lblResultadoCategoria";
-            this.lblResultadoCategoria.Size = new System.Drawing.Size(0, 20);
+            this.lblResultadoCategoria.Size = new System.Drawing.Size(0, 25);
             this.lblResultadoCategoria.TabIndex = 17;
             // 
             // lblResultadoPrecio
             // 
             this.lblResultadoPrecio.AutoSize = true;
             this.lblResultadoPrecio.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultadoPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultadoPrecio.ForeColor = System.Drawing.Color.Gray;
-            this.lblResultadoPrecio.Location = new System.Drawing.Point(215, 509);
+            this.lblResultadoPrecio.Location = new System.Drawing.Point(238, 505);
             this.lblResultadoPrecio.Name = "lblResultadoPrecio";
-            this.lblResultadoPrecio.Size = new System.Drawing.Size(0, 20);
+            this.lblResultadoPrecio.Size = new System.Drawing.Size(0, 25);
             this.lblResultadoPrecio.TabIndex = 18;
             // 
             // tBoxResultadoDescripcion
             // 
-            this.tBoxResultadoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBoxResultadoDescripcion.BackColor = System.Drawing.SystemColors.Control;
+            this.tBoxResultadoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBoxResultadoDescripcion.ForeColor = System.Drawing.Color.Gray;
-            this.tBoxResultadoDescripcion.Location = new System.Drawing.Point(180, 248);
+            this.tBoxResultadoDescripcion.Location = new System.Drawing.Point(186, 248);
             this.tBoxResultadoDescripcion.Multiline = true;
             this.tBoxResultadoDescripcion.Name = "tBoxResultadoDescripcion";
             this.tBoxResultadoDescripcion.ReadOnly = true;
@@ -309,6 +318,7 @@
             this.Controls.Add(this.pcbSerch);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(862, 612);
             this.MinimizeBox = false;

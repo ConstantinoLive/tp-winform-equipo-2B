@@ -81,12 +81,41 @@ namespace Conexion
 
         public void ingresar(Articulo nuevo)
         {
+            AccesoDatos IngresarDatos = new AccesoDatos();
+            CnxnTbImagenes CargarImagen = new CnxnTbImagenes();
+
+            try
+            {
+                IngresarDatos.Consulta("INSERT INTO ARTICULOS (Codigo,Nombre,Descripcion,IdMarca,IdCategoria,Precio) VALUES ('" + nuevo.CodArticulo + "','" + nuevo.Nombre + "','" + nuevo.Descripcion + "', @IdMarca ,@IdCategoria ," + nuevo.Precio + ")");
+                IngresarDatos.SetearParametros("@IdMarca", nuevo.Marca.id);
+                IngresarDatos.SetearParametros("@IdCategoria", nuevo.Categoria.Id);
+                IngresarDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                IngresarDatos.CerrarConexion();
+            }
 
         }
 
-        public void eliminar(Articulo existente)
+        public void eliminarFisico(int idArticulo)
         {
-
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("DELETE FROM ARTICULOS WHERE Id = @Id");
+                accesoDatos.SetearParametros("@Id", idArticulo);
+                //accesoDatos.SetearParametro("@Id", idArticulo);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void modificar(Articulo existente)

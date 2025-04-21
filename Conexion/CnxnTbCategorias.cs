@@ -9,9 +9,37 @@ namespace Conexion
 {
     public class CnxnTbCategorias
     {
-        public List<Categoria> listarCat()
+        public List<Categoria> listarCategorias()
         {
-            return new List<Categoria>();
+                List<Categoria> lista = new List<Categoria>();
+                AccesoDatos datos = new AccesoDatos();
+
+                try
+                {
+                    datos.Consulta("select Descripcion from CARAGORIAS");
+                    datos.EjecutarConsulta();
+
+                    while (datos.Reader.Read())
+                    {
+                        Categoria aux = new Categoria();
+
+                        aux.categoria = (string)datos.Reader["Descripcion"];
+                        lista.Add(aux);
+                    }
+
+                    return lista;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+                finally
+                {
+                    datos.CerrarConexion();
+                }
+
+            
         }
     }
 }

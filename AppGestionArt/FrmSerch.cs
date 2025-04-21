@@ -23,31 +23,6 @@ namespace AppGestionArt
 
         private void FrmSerch_Load(object sender, EventArgs e)
         {
-            /* CnxnTbArticulo cnxnTbArticulo = new CnxnTbArticulo();
-             try
-             {
-                 listaArticulos = new List<Articulo>();  
-
-                 List<Articulo> codigos = cnxnTbArticulo.listarCodArt();
-                 codigos.Insert(0, new Articulo { CodArticulo = "" });
-                 cBoxCodigo.DataSource = codigos;
-                 cBoxCodigo.DisplayMember = "CodArticulo"; 
-                 cBoxCodigo.ValueMember = "CodArticulo";
-
-                 List<Articulo> nombre = cnxnTbArticulo.listarNombreArt();
-                 nombre.Insert(0, new Articulo { CodArticulo = "" });
-                 cBoxNombre.DataSource = nombre;
-                 cBoxNombre.DisplayMember = "Nombre"; 
-                 cBoxNombre.ValueMember = "Nombre";
-
-
-             }
-             catch (Exception ex)
-             {
-                 MessageBox.Show("Error al cargar los códigos: " + ex.Message);
-                 //throw;
-             }*/
-
             ArticuloDatos datos = new ArticuloDatos();
             try
             {
@@ -68,6 +43,7 @@ namespace AppGestionArt
                 cBoxCodigo.DisplayMember = "CodArticulo";
                 cBoxCodigo.ValueMember = "CodArticulo";
 
+               
                 // ComboBox Nombre
                 List<Articulo> nombres = new List<Articulo>();
                 HashSet<string> nombresUnicos = new HashSet<string>();
@@ -93,42 +69,54 @@ namespace AppGestionArt
         {
             string codSeleccionado = cBoxCodigo.Text;
             string nombreSeleccionado = cBoxNombre.Text;
-
-            Articulo encontrado = listaArticulos.FirstOrDefault(x =>
+            try
+            {
+                Articulo encontrado = listaArticulos.FirstOrDefault(x =>
                 (string.IsNullOrEmpty(codSeleccionado) || x.CodArticulo == codSeleccionado) &&
                 (string.IsNullOrEmpty(nombreSeleccionado) || x.Nombre == nombreSeleccionado));
 
-            if (encontrado != null)
-            {
-                lblResultadoID.Text = encontrado.IdProductos.ToString();
-                lblResultadoCodigo.Text = encontrado.CodArticulo;
-                lblResultadoNombre.Text = encontrado.Nombre;
-                tBoxResultadoDescripcion.Text = encontrado.Descripcion;
-                lblResultadoMarca.Text = encontrado.Marca?.marca ?? "";
-                lblResultadoCategoria.Text = encontrado.Categoria?.categoria ?? "";
-                lblResultadoPrecio.Text = encontrado.Precio.ToString("C");
+                if (encontrado != null)
+                {
+                    lblResultadoID.Text = encontrado.IdProductos.ToString();
+                    lblResultadoCodigo.Text = encontrado.CodArticulo;
+                    lblResultadoNombre.Text = encontrado.Nombre;
+                    tBoxResultadoDescripcion.Text = encontrado.Descripcion;
+                    lblResultadoMarca.Text = encontrado.Marca?.marca ?? "";
+                    lblResultadoCategoria.Text = encontrado.Categoria?.categoria ?? "";
+                    lblResultadoPrecio.Text = encontrado.Precio.ToString("C");
+
+                    try
+                    {
+                        pcbSerch.Load(encontrado.UrlImagen);
+                    }
+                    catch (Exception)
+                    {
+                        pcbSerch.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró ningún artículo con los criterios seleccionados.", "Resultado no encontrado", MessageBoxButtons.OK);
+
+                    lblResultadoID.Text =
+                    lblResultadoCodigo.Text =
+                    lblResultadoNombre.Text =
+                    tBoxResultadoDescripcion.Text =
+                    lblResultadoMarca.Text =
+                    lblResultadoCategoria.Text =
+                    lblResultadoPrecio.Text = "";
+                    pcbSerch.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
+                }
             }
-            else
+            catch (Exception ex)
             {
                 MessageBox.Show("No se encontró ningún artículo con los criterios seleccionados.", "Resultado no encontrado", MessageBoxButtons.OK);
+               // throw;
+            }
+            
 
-                lblResultadoID.Text =
-                lblResultadoCodigo.Text =
-                lblResultadoNombre.Text =
-                tBoxResultadoDescripcion.Text =
-                lblResultadoMarca.Text =
-                lblResultadoCategoria.Text =
-                lblResultadoPrecio.Text = "";
-            }
-
-            try
-            {
-                pcbSerch.Load(encontrado.UrlImagen);
-            }
-            catch (Exception)
-            {
-                pcbSerch.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
-            }
+           
 
 
         }
