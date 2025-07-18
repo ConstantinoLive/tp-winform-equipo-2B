@@ -33,7 +33,7 @@ namespace AppGestionArt
                 HashSet<string> codigosUnicos = new HashSet<string>();
                 foreach (var art in listaArticulos)
                 {
-                    if (codigosUnicos.Add(art.CodArticulo)) // Agrega si no existía
+                    if (codigosUnicos.Add(art.CodArticulo)) 
                     {
                         codigos.Add(new Articulo { CodArticulo = art.CodArticulo });
                     }
@@ -120,5 +120,7 @@ namespace AppGestionArt
 
 
         }
+
+      
     }
 }

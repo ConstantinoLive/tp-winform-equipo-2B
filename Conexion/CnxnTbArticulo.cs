@@ -74,11 +74,6 @@ namespace Conexion
 
         }
 
-        public void buscar(Articulo existente)
-        {
-
-        }
-
         public void ingresar(Articulo nuevo)
         {
             AccesoDatos IngresarDatos = new AccesoDatos();
@@ -118,9 +113,32 @@ namespace Conexion
             }
         }
 
-        public void modificar(Articulo existente)
+        public void modificar(Articulo Art)
         {
+            AccesoDatos datos = new AccesoDatos();
 
+            try
+            {
+                datos.Consulta("UPDATE ARTICULOS SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, Precio = @Precio WHERE Id = @Id");
+                datos.SetearParametros("@Id", Art.IdProductos);
+                datos.SetearParametros("@Codigo", Art.CodArticulo);
+                datos.SetearParametros("@Nombre", Art.Nombre);
+                datos.SetearParametros("@Descripcion", Art.Descripcion);
+                datos.SetearParametros("@IdMarca", Art.Marca.id);
+                datos.SetearParametros("@IdCategoria", Art.Categoria.Id);
+                datos.SetearParametros("@Precio", Art.Precio);
+
+                datos.EjecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
         }
     }
 }

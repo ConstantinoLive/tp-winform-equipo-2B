@@ -33,6 +33,8 @@ namespace AppGestionArt
 
         private List<Imagenes> listaImagenes;
 
+        private int idArticuloSeleccionado;
+
 
         private void FrmModify_Load(object sender, EventArgs e)
         {
@@ -90,9 +92,9 @@ namespace AppGestionArt
                 HashSet<string> DescMarca = new HashSet<string>();
                 foreach (var art in listaMarca)
                 {
-                    if (DescMarca.Add(art.marca))
+                    if (DescMarca.Add( art.marca))
                     {
-                        DescripcionMarca.Add(new Marca { marca = art.marca });
+                        DescripcionMarca.Add(new Marca {id=art.id, marca = art.marca });
                     }
 
                 }
@@ -113,7 +115,7 @@ namespace AppGestionArt
                 {
                     if (DescCate.Add(art.categoria))
                     {
-                        DescripcionCategoria.Add(new Categoria { categoria = art.categoria });
+                        DescripcionCategoria.Add(new Categoria {Id=art.Id, categoria = art.categoria });
                     }
 
                 }
@@ -159,12 +161,13 @@ namespace AppGestionArt
 
                 if (encontrado != null)
                 {
+                    idArticuloSeleccionado = encontrado.IdProductos;
                     tBoxCodigo.Text = encontrado.CodArticulo;
                     tBoxNombre.Text = encontrado.Nombre;
                     tBoxDescripcion.Text = encontrado.Descripcion;
                     cBoxMarca.Text = encontrado.Marca?.marca ?? "";
                     cBoxCategoria.Text = encontrado.Categoria?.categoria ?? "";
-                    tBoxPrecio.Text = encontrado.Precio.ToString("C");
+                    tBoxPrecio.Text = encontrado.Precio.ToString();
 
                     lblCaracteres.Text = encontrado.Descripcion.Length + "/150";
 
@@ -335,7 +338,32 @@ namespace AppGestionArt
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            Articulo ArticuloModificado = new Articulo();
+            CnxnTbArticulo ModificarArticuloBD = new CnxnTbArticulo();
             
+
+            try
+            {
+                ArticuloModificado.IdProductos = idArticuloSeleccionado;
+                ArticuloModificado.CodArticulo=tBoxCodigo.Text; 
+                ArticuloModificado.Nombre = tBoxNombre.Text;    
+                ArticuloModificado.Descripcion = tBoxDescripcion.Text;  
+                ArticuloModificado.Marca=(Marca)cBoxMarca.SelectedItem;
+                ArticuloModificado.Categoria=(Categoria)cBoxCategoria.SelectedItem;
+                ArticuloModificado.Precio=double.Parse(tBoxPrecio.Text);
+
+                ModificarArticuloBD.modificar(ArticuloModificado);
+
+                MessageBox.Show("El artículo se ha modificado correctamente", "Modificación");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("El articulo no se ha podido modificar. " + ex.ToString(), "Error inesperado") ;
+            }
+
         }
+
+       
     }
 }

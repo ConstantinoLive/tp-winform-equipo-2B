@@ -101,6 +101,7 @@
             this.tabModify.Controls.Add(this.tabPage3);
             this.tabModify.Controls.Add(this.tabPage4);
             this.tabModify.Location = new System.Drawing.Point(12, 12);
+            this.tabModify.Multiline = true;
             this.tabModify.Name = "tabModify";
             this.tabModify.SelectedIndex = 0;
             this.tabModify.Size = new System.Drawing.Size(673, 534);
@@ -154,6 +155,8 @@
             this.btnGuardar.AutoSize = true;
             this.btnGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
@@ -223,11 +226,11 @@
             this.lblAPrecio.AutoSize = true;
             this.lblAPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAPrecio.ForeColor = System.Drawing.Color.White;
-            this.lblAPrecio.Location = new System.Drawing.Point(83, 419);
+            this.lblAPrecio.Location = new System.Drawing.Point(99, 419);
             this.lblAPrecio.Name = "lblAPrecio";
-            this.lblAPrecio.Size = new System.Drawing.Size(83, 25);
+            this.lblAPrecio.Size = new System.Drawing.Size(67, 25);
             this.lblAPrecio.TabIndex = 10;
-            this.lblAPrecio.Text = "Precio $";
+            this.lblAPrecio.Text = "Precio";
             // 
             // lblACategoria
             // 
@@ -293,6 +296,8 @@
             this.btonBuscar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btonBuscar.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btonBuscar.FlatAppearance.BorderSize = 0;
+            this.btonBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btonBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btonBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btonBuscar.Image")));
             this.btonBuscar.Location = new System.Drawing.Point(623, 10);
@@ -368,6 +373,8 @@
             // 
             this.btnIGuardar.AutoSize = true;
             this.btnIGuardar.FlatAppearance.BorderSize = 0;
+            this.btnIGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnIGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnIGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnIGuardar.Image")));
             this.btnIGuardar.Location = new System.Drawing.Point(553, 446);
@@ -408,7 +415,7 @@
             // btnDown
             // 
             this.btnDown.AutoSize = true;
-            this.btnDown.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnDown.BackColor = System.Drawing.Color.Transparent;
             this.btnDown.FlatAppearance.BorderSize = 0;
             this.btnDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDown.Image = ((System.Drawing.Image)(resources.GetObject("btnDown.Image")));
@@ -422,7 +429,7 @@
             // btnUP
             // 
             this.btnUP.AutoSize = true;
-            this.btnUP.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnUP.BackColor = System.Drawing.Color.Transparent;
             this.btnUP.FlatAppearance.BorderSize = 0;
             this.btnUP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUP.Image = ((System.Drawing.Image)(resources.GetObject("btnUP.Image")));
@@ -436,6 +443,7 @@
             // lblImagen
             // 
             this.lblImagen.BackColor = System.Drawing.Color.White;
+            this.lblImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImagen.ForeColor = System.Drawing.Color.Black;
             this.lblImagen.ImageList = this.imagenArt;
             this.lblImagen.Location = new System.Drawing.Point(90, 77);
@@ -446,7 +454,7 @@
             // imagenArt
             // 
             this.imagenArt.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imagenArt.ImageSize = new System.Drawing.Size(16, 16);
+            this.imagenArt.ImageSize = new System.Drawing.Size(150, 150);
             this.imagenArt.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // btnIBuscar
@@ -458,6 +466,8 @@
             this.btnIBuscar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnIBuscar.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btnIBuscar.FlatAppearance.BorderSize = 0;
+            this.btnIBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnIBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnIBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnIBuscar.Image")));
             this.btnIBuscar.Location = new System.Drawing.Point(623, 10);
@@ -532,6 +542,8 @@
             // 
             this.btnMGuardar.AutoSize = true;
             this.btnMGuardar.FlatAppearance.BorderSize = 0;
+            this.btnMGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnMGuardar.Image")));
             this.btnMGuardar.Location = new System.Drawing.Point(558, 434);
@@ -587,6 +599,8 @@
             this.btnMBuscar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnMBuscar.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btnMBuscar.FlatAppearance.BorderSize = 0;
+            this.btnMBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnMBuscar.Image")));
             this.btnMBuscar.Location = new System.Drawing.Point(346, 10);
@@ -652,6 +666,8 @@
             // 
             this.btnCGuardar.AutoSize = true;
             this.btnCGuardar.FlatAppearance.BorderSize = 0;
+            this.btnCGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnCGuardar.Image")));
             this.btnCGuardar.Location = new System.Drawing.Point(558, 434);
@@ -707,6 +723,8 @@
             this.btnCBuscar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCBuscar.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btnCBuscar.FlatAppearance.BorderSize = 0;
+            this.btnCBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnCBuscar.Image")));
             this.btnCBuscar.Location = new System.Drawing.Point(385, 10);

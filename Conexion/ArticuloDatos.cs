@@ -63,7 +63,7 @@ namespace AppGestionArt
 
         }
 
-        public void modificar(Articulo Art)
+       /* public void modificar(Articulo Art)
         {
             AccesoDatos datos = new AccesoDatos();
 
@@ -89,6 +89,6 @@ namespace AppGestionArt
             {
                 datos.CerrarConexion();
             }
-        }
+        }*/
     }
 }

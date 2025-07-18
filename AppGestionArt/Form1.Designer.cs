@@ -37,6 +37,8 @@
             this.lblCantidad = new System.Windows.Forms.Label();
             this.pcbArticulos = new System.Windows.Forms.PictureBox();
             this.btnmodify = new System.Windows.Forms.Button();
+            this.BtnLeft = new System.Windows.Forms.Button();
+            this.BtnRight = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbArticulos)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +103,7 @@
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.RowTemplate.Height = 24;
-            this.dgvArticulos.Size = new System.Drawing.Size(717, 275);
+            this.dgvArticulos.Size = new System.Drawing.Size(1311, 556);
             this.dgvArticulos.TabIndex = 3;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
@@ -112,7 +114,7 @@
             this.lblreg.BackColor = System.Drawing.Color.Transparent;
             this.lblreg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblreg.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblreg.Location = new System.Drawing.Point(94, 554);
+            this.lblreg.Location = new System.Drawing.Point(94, 835);
             this.lblreg.Name = "lblreg";
             this.lblreg.Size = new System.Drawing.Size(96, 20);
             this.lblreg.TabIndex = 4;
@@ -125,7 +127,7 @@
             this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblCantidad.Location = new System.Drawing.Point(201, 555);
+            this.lblCantidad.Location = new System.Drawing.Point(201, 836);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(0, 20);
             this.lblCantidad.TabIndex = 5;
@@ -134,9 +136,9 @@
             // 
             this.pcbArticulos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pcbArticulos.BackColor = System.Drawing.Color.Transparent;
-            this.pcbArticulos.Location = new System.Drawing.Point(828, 232);
+            this.pcbArticulos.Location = new System.Drawing.Point(1436, 232);
             this.pcbArticulos.Name = "pcbArticulos";
-            this.pcbArticulos.Size = new System.Drawing.Size(374, 342);
+            this.pcbArticulos.Size = new System.Drawing.Size(348, 309);
             this.pcbArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbArticulos.TabIndex = 6;
             this.pcbArticulos.TabStop = false;
@@ -157,12 +159,42 @@
             this.btnmodify.UseVisualStyleBackColor = false;
             this.btnmodify.Click += new System.EventHandler(this.btnmodify_Click);
             // 
+            // BtnLeft
+            // 
+            this.BtnLeft.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.FlatAppearance.BorderSize = 0;
+            this.BtnLeft.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLeft.Image = ((System.Drawing.Image)(resources.GetObject("BtnLeft.Image")));
+            this.BtnLeft.Location = new System.Drawing.Point(1708, 626);
+            this.BtnLeft.Name = "BtnLeft";
+            this.BtnLeft.Size = new System.Drawing.Size(41, 44);
+            this.BtnLeft.TabIndex = 8;
+            this.BtnLeft.UseVisualStyleBackColor = false;
+            // 
+            // BtnRight
+            // 
+            this.BtnRight.BackColor = System.Drawing.Color.Transparent;
+            this.BtnRight.FlatAppearance.BorderSize = 0;
+            this.BtnRight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRight.Image = ((System.Drawing.Image)(resources.GetObject("BtnRight.Image")));
+            this.BtnRight.Location = new System.Drawing.Point(1791, 626);
+            this.BtnRight.Name = "BtnRight";
+            this.BtnRight.Size = new System.Drawing.Size(45, 44);
+            this.BtnRight.TabIndex = 9;
+            this.BtnRight.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1283, 591);
+            this.ClientSize = new System.Drawing.Size(1877, 872);
+            this.Controls.Add(this.BtnRight);
+            this.Controls.Add(this.BtnLeft);
             this.Controls.Add(this.btnmodify);
             this.Controls.Add(this.pcbArticulos);
             this.Controls.Add(this.lblCantidad);
@@ -193,6 +225,8 @@
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.PictureBox pcbArticulos;
         private System.Windows.Forms.Button btnmodify;
+        private System.Windows.Forms.Button BtnLeft;
+        private System.Windows.Forms.Button BtnRight;
     }
 }
 
