@@ -76,7 +76,12 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(599, 490);
@@ -92,7 +97,12 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(403, 490);
@@ -101,6 +111,7 @@
             this.button1.Size = new System.Drawing.Size(155, 51);
             this.button1.TabIndex = 33;
             this.button1.Text = "Subir";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -121,7 +132,6 @@
             this.textPrecio.Name = "textPrecio";
             this.textPrecio.Size = new System.Drawing.Size(217, 30);
             this.textPrecio.TabIndex = 29;
-            this.textPrecio.Text = "$";
             // 
             // textDescripcion
             // 
@@ -238,6 +248,7 @@
             // 
             // lstBxURL
             // 
+            this.lstBxURL.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lstBxURL.FormattingEnabled = true;
             this.lstBxURL.ItemHeight = 16;
             this.lstBxURL.Location = new System.Drawing.Point(53, 393);
@@ -248,6 +259,7 @@
             // btnPlus
             // 
             this.btnPlus.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlus.FlatAppearance.BorderSize = 0;
             this.btnPlus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnPlus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -263,6 +275,7 @@
             // BtnDelete
             // 
             this.BtnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDelete.FlatAppearance.BorderSize = 0;
             this.BtnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

@@ -23,6 +23,8 @@ namespace Conexion
                 {
                     Imagenes aux = new Imagenes();
 
+                    aux.IdArticulo = (int)datos.Reader["IdArticulo"];
+                    aux.id = (int)datos.Reader["IdImagen"];
                     aux.ImagenUrl = (string)datos.Reader["ImagenUrl"];
                     lista.Add(aux);
                 }
@@ -54,16 +56,19 @@ namespace Conexion
             {
                 throw ex;
             }
+ 
         }
 
-        public void ingresarUrl(string nuevo, int url)
+        /*Modulo agregar*/
+
+        public void ingresarUrl(string nuevo, int id)
         {
             AccesoDatos IngresarDatos = new AccesoDatos();
 
             try
             {
                 IngresarDatos.Consulta("INSERT INTO IMAGENES (IdArticulo,ImagenUrl) VALUES (@IdArticulos,@ImagenUrl)");
-                IngresarDatos.SetearParametros("@IdArticulos", url);
+                IngresarDatos.SetearParametros("@IdArticulos", id);
                 IngresarDatos.SetearParametros("@ImagenUrl", nuevo);
                 IngresarDatos.EjecutarAccion();
             }
@@ -76,6 +81,43 @@ namespace Conexion
                 IngresarDatos.CerrarConexion();
             }
 
+        }
+        /*Modulo modificar*/
+
+        public void ModificarImagen(int id, string nuevo)
+        {
+            AccesoDatos ModificarDatos = new AccesoDatos();
+
+            try
+            {
+                ModificarDatos.Consulta("UPDATE IMAGENES SET ImagenUrl = @ImagenUrl WHERE Id = @IdImagen");
+                ModificarDatos.SetearParametros("@IdImagen", id);
+                ModificarDatos.SetearParametros("@ImagenUrl", nuevo);
+                ModificarDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                ModificarDatos.CerrarConexion();
+            }
+        }
+
+        public void eliminarPorURL(string url)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("DELETE FROM IMAGENES WHERE ImagenUrl = @URL");
+                accesoDatos.SetearParametros("@URL", url);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
     }

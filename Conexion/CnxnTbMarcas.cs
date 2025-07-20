@@ -41,6 +41,52 @@ namespace Conexion
 
         }
 
+        public void eliminarFisico(int idMarca)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("DELETE FROM MARCAS WHERE Id = @IdMarca");
+                accesoDatos.SetearParametros("@IdMarca", idMarca);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
+        public void agregarMarca(string nuevaMarca)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("INSERT INTO MARCAS (Descripcion) VALUES (@Marca)");
+                accesoDatos.SetearParametros("@Marca", nuevaMarca);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void modificarMarca(int Id, string nuevaMarca)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("UPDATE MARCAS SET Descripcion = @Marca WHERE Id = @IdMarca");
+                accesoDatos.SetearParametros("@Marca", nuevaMarca);
+                accesoDatos.SetearParametros("@IdMarca", Id);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         
     }
     

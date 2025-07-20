@@ -47,6 +47,7 @@
             // 
             this.btnserch.BackColor = System.Drawing.Color.Transparent;
             this.btnserch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnserch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnserch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnserch.ForeColor = System.Drawing.Color.DimGray;
             this.btnserch.Image = ((System.Drawing.Image)(resources.GetObject("btnserch.Image")));
@@ -63,6 +64,7 @@
             // btnadd
             // 
             this.btnadd.BackColor = System.Drawing.Color.Transparent;
+            this.btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnadd.ForeColor = System.Drawing.Color.DimGray;
             this.btnadd.Image = ((System.Drawing.Image)(resources.GetObject("btnadd.Image")));
@@ -79,6 +81,7 @@
             // btntrash
             // 
             this.btntrash.BackColor = System.Drawing.Color.Transparent;
+            this.btntrash.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntrash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntrash.ForeColor = System.Drawing.Color.DimGray;
             this.btntrash.Image = ((System.Drawing.Image)(resources.GetObject("btntrash.Image")));
@@ -146,6 +149,7 @@
             // btnmodify
             // 
             this.btnmodify.BackColor = System.Drawing.Color.Transparent;
+            this.btnmodify.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmodify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmodify.ForeColor = System.Drawing.Color.DimGray;
             this.btnmodify.Image = ((System.Drawing.Image)(resources.GetObject("btnmodify.Image")));

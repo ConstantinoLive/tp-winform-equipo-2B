@@ -112,6 +112,7 @@
             // 
             this.btnBuscar.AutoSize = true;
             this.btnBuscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -280,14 +281,15 @@
             // tBoxResultadoDescripcion
             // 
             this.tBoxResultadoDescripcion.BackColor = System.Drawing.Color.White;
+            this.tBoxResultadoDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tBoxResultadoDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxResultadoDescripcion.ForeColor = System.Drawing.Color.Gray;
-            this.tBoxResultadoDescripcion.Location = new System.Drawing.Point(186, 248);
+            this.tBoxResultadoDescripcion.ForeColor = System.Drawing.Color.DimGray;
+            this.tBoxResultadoDescripcion.Location = new System.Drawing.Point(168, 248);
             this.tBoxResultadoDescripcion.Multiline = true;
             this.tBoxResultadoDescripcion.Name = "tBoxResultadoDescripcion";
             this.tBoxResultadoDescripcion.ReadOnly = true;
             this.tBoxResultadoDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tBoxResultadoDescripcion.Size = new System.Drawing.Size(236, 122);
+            this.tBoxResultadoDescripcion.Size = new System.Drawing.Size(236, 133);
             this.tBoxResultadoDescripcion.TabIndex = 19;
             // 
             // FrmSerch

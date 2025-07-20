@@ -14,6 +14,7 @@ namespace AppGestionArt
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace AppGestionArt
 
         private void Cargar()
         {
+            
             ArticuloDatos datos = new ArticuloDatos();
             List<Articulo> lista = datos.listar();
             dgvArticulos.DataSource = datos.listar();
@@ -67,6 +69,7 @@ namespace AppGestionArt
         {
             FrmAdd frmAdd = new FrmAdd();   
             frmAdd.ShowDialog();
+            Cargar();
         }
 
         private void btntrash_Click(object sender, EventArgs e)
@@ -96,6 +99,7 @@ namespace AppGestionArt
         {
             FrmModify frmModify = new FrmModify();  
             frmModify.ShowDialog();
+            Cargar();
         }
     }
 }

@@ -91,14 +91,9 @@ namespace AppGestionArt
         private void button1_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(textCodigo.Text) ||
-               string.IsNullOrWhiteSpace(textNombre.Text) ||
-               string.IsNullOrWhiteSpace(textDescripcion.Text) ||
-               string.IsNullOrWhiteSpace(textPrecio.Text) ||
-               cbMarca.SelectedIndex == -1 ||
-               cbCategoria.SelectedIndex == -1 ||
-               lstBxURL.Items.Count == 0)
+               string.IsNullOrWhiteSpace(textNombre.Text))
             {
-                MessageBox.Show("Debe completar todos los campos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Debe completar el código y el nombre del artículo", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -106,6 +101,7 @@ namespace AppGestionArt
             ArticuloDatos articulos = new ArticuloDatos();
             CnxnTbArticulo AgregarArticuloBD = new CnxnTbArticulo();
             CnxnTbImagenes AgregarImagen = new CnxnTbImagenes();
+            
             try
             {
                 AgregarArticulo.CodArticulo = textCodigo.Text;

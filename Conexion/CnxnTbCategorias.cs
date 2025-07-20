@@ -41,5 +41,50 @@ namespace Conexion
 
             
         }
+
+        public void eliminarFisico(int idCategoria)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("DELETE FROM CATEGORIAS WHERE Id = @IdCategoria");
+                accesoDatos.SetearParametros("@IdCategoria", idCategoria);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+        public void agregarCategoria(string nuevaCategoria)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("INSERT INTO CATEGORIAS (Descripcion) VALUES (@Descripcion)");
+                accesoDatos.SetearParametros("@Descripcion", nuevaCategoria);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void modificarCategoria(int idCategoria, string nuevaCategoria)
+        {
+            try
+            {
+                AccesoDatos accesoDatos = new AccesoDatos();
+                accesoDatos.Consulta("UPDATE CATEGORIAS SET Descripcion = @Descripcion WHERE Id = @IdCategoria");
+                accesoDatos.SetearParametros("@Descripcion", nuevaCategoria);
+                accesoDatos.SetearParametros("@IdCategoria", idCategoria);
+                accesoDatos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

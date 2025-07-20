@@ -28,6 +28,7 @@ namespace AppGestionArt
             {
                 listaArticulos = datos.listar();
 
+
                 // ComboBox Código
                 List<Articulo> codigos = new List<Articulo>();
                 HashSet<string> codigosUnicos = new HashSet<string>();
@@ -69,6 +70,7 @@ namespace AppGestionArt
         {
             string codSeleccionado = cBoxCodigo.Text;
             string nombreSeleccionado = cBoxNombre.Text;
+
             try
             {
                 Articulo encontrado = listaArticulos.FirstOrDefault(x =>
