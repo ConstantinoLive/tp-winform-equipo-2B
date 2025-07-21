@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnserch = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             this.btntrash = new System.Windows.Forms.Button();
@@ -55,7 +58,7 @@
             this.btnserch.Location = new System.Drawing.Point(91, 35);
             this.btnserch.Name = "btnserch";
             this.btnserch.Size = new System.Drawing.Size(120, 130);
-            this.btnserch.TabIndex = 0;
+            this.btnserch.TabIndex = 1;
             this.btnserch.Text = "Buscar";
             this.btnserch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnserch.UseVisualStyleBackColor = false;
@@ -72,7 +75,7 @@
             this.btnadd.Location = new System.Drawing.Point(253, 35);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(120, 130);
-            this.btnadd.TabIndex = 1;
+            this.btnadd.TabIndex = 2;
             this.btnadd.Text = "Agregar";
             this.btnadd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnadd.UseVisualStyleBackColor = false;
@@ -89,7 +92,7 @@
             this.btntrash.Location = new System.Drawing.Point(415, 35);
             this.btntrash.Name = "btntrash";
             this.btntrash.Size = new System.Drawing.Size(120, 130);
-            this.btntrash.TabIndex = 2;
+            this.btntrash.TabIndex = 3;
             this.btntrash.Text = "Eliminar";
             this.btntrash.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btntrash.UseVisualStyleBackColor = false;
@@ -101,13 +104,40 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArticulos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvArticulos.Location = new System.Drawing.Point(91, 237);
+            this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArticulos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.RowTemplate.Height = 24;
+            this.dgvArticulos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArticulos.Size = new System.Drawing.Size(1311, 556);
-            this.dgvArticulos.TabIndex = 3;
+            this.dgvArticulos.TabIndex = 5;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // lblreg
@@ -120,7 +150,7 @@
             this.lblreg.Location = new System.Drawing.Point(94, 835);
             this.lblreg.Name = "lblreg";
             this.lblreg.Size = new System.Drawing.Size(96, 20);
-            this.lblreg.TabIndex = 4;
+            this.lblreg.TabIndex = 0;
             this.lblreg.Text = "Registros:";
             // 
             // lblCantidad
@@ -133,7 +163,7 @@
             this.lblCantidad.Location = new System.Drawing.Point(201, 836);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(0, 20);
-            this.lblCantidad.TabIndex = 5;
+            this.lblCantidad.TabIndex = 0;
             // 
             // pcbArticulos
             // 
@@ -157,7 +187,7 @@
             this.btnmodify.Location = new System.Drawing.Point(577, 35);
             this.btnmodify.Name = "btnmodify";
             this.btnmodify.Size = new System.Drawing.Size(120, 130);
-            this.btnmodify.TabIndex = 7;
+            this.btnmodify.TabIndex = 4;
             this.btnmodify.Text = "Modificar";
             this.btnmodify.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnmodify.UseVisualStyleBackColor = false;
@@ -174,8 +204,9 @@
             this.BtnLeft.Location = new System.Drawing.Point(1708, 626);
             this.BtnLeft.Name = "BtnLeft";
             this.BtnLeft.Size = new System.Drawing.Size(41, 44);
-            this.BtnLeft.TabIndex = 8;
+            this.BtnLeft.TabIndex = 6;
             this.BtnLeft.UseVisualStyleBackColor = false;
+            this.BtnLeft.Click += new System.EventHandler(this.BtnLeft_Click);
             // 
             // BtnRight
             // 
@@ -188,8 +219,9 @@
             this.BtnRight.Location = new System.Drawing.Point(1791, 626);
             this.BtnRight.Name = "BtnRight";
             this.BtnRight.Size = new System.Drawing.Size(45, 44);
-            this.BtnRight.TabIndex = 9;
+            this.BtnRight.TabIndex = 7;
             this.BtnRight.UseVisualStyleBackColor = false;
+            this.BtnRight.Click += new System.EventHandler(this.BtnRight_Click);
             // 
             // Form1
             // 

@@ -74,7 +74,7 @@
             this.lblCodigo.Location = new System.Drawing.Point(28, 37);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(92, 29);
-            this.lblCodigo.TabIndex = 1;
+            this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
             // lblNombre
@@ -86,7 +86,7 @@
             this.lblNombre.Location = new System.Drawing.Point(350, 37);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(101, 29);
-            this.lblNombre.TabIndex = 2;
+            this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             // 
             // cBoxCodigo
@@ -99,7 +99,7 @@
             this.cBoxCodigo.Location = new System.Drawing.Point(125, 32);
             this.cBoxCodigo.Name = "cBoxCodigo";
             this.cBoxCodigo.Size = new System.Drawing.Size(190, 37);
-            this.cBoxCodigo.TabIndex = 3;
+            this.cBoxCodigo.TabIndex = 1;
             // 
             // cBoxNombre
             // 
@@ -108,7 +108,7 @@
             this.cBoxNombre.Location = new System.Drawing.Point(454, 32);
             this.cBoxNombre.Name = "cBoxNombre";
             this.cBoxNombre.Size = new System.Drawing.Size(190, 37);
-            this.cBoxNombre.TabIndex = 4;
+            this.cBoxNombre.TabIndex = 2;
             // 
             // btnBuscar
             // 
@@ -124,7 +124,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(697, 31);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(111, 38);
-            this.btnBuscar.TabIndex = 5;
+            this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -139,7 +139,7 @@
             this.lblRID.Location = new System.Drawing.Point(42, 111);
             this.lblRID.Name = "lblRID";
             this.lblRID.Size = new System.Drawing.Size(120, 25);
-            this.lblRID.TabIndex = 6;
+            this.lblRID.TabIndex = 0;
             this.lblRID.Text = "ID Producto:";
             // 
             // lblRCodigo
@@ -151,7 +151,7 @@
             this.lblRCodigo.Location = new System.Drawing.Point(11, 156);
             this.lblRCodigo.Name = "lblRCodigo";
             this.lblRCodigo.Size = new System.Drawing.Size(151, 25);
-            this.lblRCodigo.TabIndex = 7;
+            this.lblRCodigo.TabIndex = 0;
             this.lblRCodigo.Text = "Código Artículo:";
             // 
             // lblRNombre
@@ -163,7 +163,7 @@
             this.lblRNombre.Location = new System.Drawing.Point(75, 203);
             this.lblRNombre.Name = "lblRNombre";
             this.lblRNombre.Size = new System.Drawing.Size(87, 25);
-            this.lblRNombre.TabIndex = 8;
+            this.lblRNombre.TabIndex = 0;
             this.lblRNombre.Text = "Nombre:";
             // 
             // lblRDescripcion
@@ -175,7 +175,7 @@
             this.lblRDescripcion.Location = new System.Drawing.Point(42, 248);
             this.lblRDescripcion.Name = "lblRDescripcion";
             this.lblRDescripcion.Size = new System.Drawing.Size(120, 25);
-            this.lblRDescripcion.TabIndex = 9;
+            this.lblRDescripcion.TabIndex = 0;
             this.lblRDescripcion.Text = "Descripción:";
             // 
             // lblRMarca
@@ -187,7 +187,7 @@
             this.lblRMarca.Location = new System.Drawing.Point(89, 384);
             this.lblRMarca.Name = "lblRMarca";
             this.lblRMarca.Size = new System.Drawing.Size(73, 25);
-            this.lblRMarca.TabIndex = 10;
+            this.lblRMarca.TabIndex = 0;
             this.lblRMarca.Text = "Marca:";
             // 
             // lblRCategoria
@@ -199,7 +199,7 @@
             this.lblRCategoria.Location = new System.Drawing.Point(59, 428);
             this.lblRCategoria.Name = "lblRCategoria";
             this.lblRCategoria.Size = new System.Drawing.Size(103, 25);
-            this.lblRCategoria.TabIndex = 11;
+            this.lblRCategoria.TabIndex = 0;
             this.lblRCategoria.Text = "Categoría:";
             // 
             // lblRPrecio
@@ -211,7 +211,7 @@
             this.lblRPrecio.Location = new System.Drawing.Point(136, 505);
             this.lblRPrecio.Name = "lblRPrecio";
             this.lblRPrecio.Size = new System.Drawing.Size(73, 25);
-            this.lblRPrecio.TabIndex = 12;
+            this.lblRPrecio.TabIndex = 0;
             this.lblRPrecio.Text = "Precio:";
             // 
             // lblResultadoID
@@ -223,7 +223,7 @@
             this.lblResultadoID.Location = new System.Drawing.Point(186, 111);
             this.lblResultadoID.Name = "lblResultadoID";
             this.lblResultadoID.Size = new System.Drawing.Size(0, 25);
-            this.lblResultadoID.TabIndex = 13;
+            this.lblResultadoID.TabIndex = 0;
             // 
             // lblResultadoCodigo
             // 
@@ -234,7 +234,7 @@
             this.lblResultadoCodigo.Location = new System.Drawing.Point(186, 156);
             this.lblResultadoCodigo.Name = "lblResultadoCodigo";
             this.lblResultadoCodigo.Size = new System.Drawing.Size(0, 25);
-            this.lblResultadoCodigo.TabIndex = 14;
+            this.lblResultadoCodigo.TabIndex = 0;
             // 
             // lblResultadoNombre
             // 
@@ -245,7 +245,7 @@
             this.lblResultadoNombre.Location = new System.Drawing.Point(186, 203);
             this.lblResultadoNombre.Name = "lblResultadoNombre";
             this.lblResultadoNombre.Size = new System.Drawing.Size(0, 25);
-            this.lblResultadoNombre.TabIndex = 15;
+            this.lblResultadoNombre.TabIndex = 0;
             // 
             // lblResultadoMarca
             // 
@@ -256,7 +256,7 @@
             this.lblResultadoMarca.Location = new System.Drawing.Point(186, 384);
             this.lblResultadoMarca.Name = "lblResultadoMarca";
             this.lblResultadoMarca.Size = new System.Drawing.Size(0, 25);
-            this.lblResultadoMarca.TabIndex = 16;
+            this.lblResultadoMarca.TabIndex = 0;
             // 
             // lblResultadoCategoria
             // 
@@ -267,7 +267,7 @@
             this.lblResultadoCategoria.Location = new System.Drawing.Point(186, 428);
             this.lblResultadoCategoria.Name = "lblResultadoCategoria";
             this.lblResultadoCategoria.Size = new System.Drawing.Size(0, 25);
-            this.lblResultadoCategoria.TabIndex = 17;
+            this.lblResultadoCategoria.TabIndex = 0;
             // 
             // lblResultadoPrecio
             // 
@@ -278,7 +278,7 @@
             this.lblResultadoPrecio.Location = new System.Drawing.Point(238, 505);
             this.lblResultadoPrecio.Name = "lblResultadoPrecio";
             this.lblResultadoPrecio.Size = new System.Drawing.Size(0, 25);
-            this.lblResultadoPrecio.TabIndex = 18;
+            this.lblResultadoPrecio.TabIndex = 0;
             // 
             // tBoxResultadoDescripcion
             // 
@@ -292,7 +292,7 @@
             this.tBoxResultadoDescripcion.ReadOnly = true;
             this.tBoxResultadoDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tBoxResultadoDescripcion.Size = new System.Drawing.Size(236, 133);
-            this.tBoxResultadoDescripcion.TabIndex = 19;
+            this.tBoxResultadoDescripcion.TabIndex = 0;
             // 
             // BtnRight
             // 
@@ -306,7 +306,7 @@
             this.BtnRight.Location = new System.Drawing.Point(635, 486);
             this.BtnRight.Name = "BtnRight";
             this.BtnRight.Size = new System.Drawing.Size(36, 36);
-            this.BtnRight.TabIndex = 21;
+            this.BtnRight.TabIndex = 5;
             this.BtnRight.UseVisualStyleBackColor = false;
             this.BtnRight.Click += new System.EventHandler(this.BtnRight_Click);
             // 
@@ -322,7 +322,7 @@
             this.BtnLeft.Location = new System.Drawing.Point(552, 486);
             this.BtnLeft.Name = "BtnLeft";
             this.BtnLeft.Size = new System.Drawing.Size(36, 36);
-            this.BtnLeft.TabIndex = 20;
+            this.BtnLeft.TabIndex = 4;
             this.BtnLeft.UseVisualStyleBackColor = false;
             this.BtnLeft.Click += new System.EventHandler(this.BtnLeft_Click);
             // 
@@ -363,7 +363,6 @@
             this.MinimumSize = new System.Drawing.Size(862, 612);
             this.Name = "FrmSerch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Buscar registo";
             this.Load += new System.EventHandler(this.FrmSerch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbSerch)).EndInit();
             this.ResumeLayout(false);

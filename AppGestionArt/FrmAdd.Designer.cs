@@ -60,7 +60,7 @@
             this.cbCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(217, 33);
-            this.cbCategoria.TabIndex = 27;
+            this.cbCategoria.TabIndex = 5;
             // 
             // cbMarca
             // 
@@ -71,7 +71,7 @@
             this.cbMarca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMarca.Name = "cbMarca";
             this.cbMarca.Size = new System.Drawing.Size(217, 33);
-            this.cbMarca.TabIndex = 25;
+            this.cbMarca.TabIndex = 4;
             // 
             // button2
             // 
@@ -88,7 +88,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 51);
-            this.button2.TabIndex = 34;
+            this.button2.TabIndex = 12;
             this.button2.Text = "Cancelar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
@@ -109,7 +109,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 51);
-            this.button1.TabIndex = 33;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Subir";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
@@ -122,7 +122,7 @@
             this.textUrlImagen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textUrlImagen.Name = "textUrlImagen";
             this.textUrlImagen.Size = new System.Drawing.Size(217, 30);
-            this.textUrlImagen.TabIndex = 31;
+            this.textUrlImagen.TabIndex = 7;
             // 
             // textPrecio
             // 
@@ -131,7 +131,7 @@
             this.textPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textPrecio.Name = "textPrecio";
             this.textPrecio.Size = new System.Drawing.Size(217, 30);
-            this.textPrecio.TabIndex = 29;
+            this.textPrecio.TabIndex = 6;
             // 
             // textDescripcion
             // 
@@ -142,7 +142,7 @@
             this.textDescripcion.Name = "textDescripcion";
             this.textDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textDescripcion.Size = new System.Drawing.Size(608, 119);
-            this.textDescripcion.TabIndex = 23;
+            this.textDescripcion.TabIndex = 3;
             // 
             // textNombre
             // 
@@ -151,7 +151,7 @@
             this.textNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(217, 30);
-            this.textNombre.TabIndex = 22;
+            this.textNombre.TabIndex = 2;
             // 
             // textCodigo
             // 
@@ -160,7 +160,7 @@
             this.textCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(217, 30);
-            this.textCodigo.TabIndex = 20;
+            this.textCodigo.TabIndex = 1;
             // 
             // label7
             // 
@@ -171,7 +171,7 @@
             this.label7.Location = new System.Drawing.Point(48, 358);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 25);
-            this.label7.TabIndex = 32;
+            this.label7.TabIndex = 0;
             this.label7.Text = "Url Imagen";
             // 
             // label6
@@ -183,7 +183,7 @@
             this.label6.Location = new System.Drawing.Point(48, 309);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 25);
-            this.label6.TabIndex = 30;
+            this.label6.TabIndex = 0;
             this.label6.Text = "Precio";
             // 
             // label5
@@ -195,7 +195,7 @@
             this.label5.Location = new System.Drawing.Point(439, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 25);
-            this.label5.TabIndex = 28;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Categoría";
             // 
             // label4
@@ -207,7 +207,7 @@
             this.label4.Location = new System.Drawing.Point(48, 256);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 25);
-            this.label4.TabIndex = 26;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Marca";
             // 
             // label3
@@ -219,7 +219,7 @@
             this.label3.Location = new System.Drawing.Point(48, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 25);
-            this.label3.TabIndex = 24;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Descripción";
             // 
             // label2
@@ -231,7 +231,7 @@
             this.label2.Location = new System.Drawing.Point(439, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 25);
-            this.label2.TabIndex = 21;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nombre";
             // 
             // label1
@@ -243,7 +243,7 @@
             this.label1.Location = new System.Drawing.Point(48, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 25);
-            this.label1.TabIndex = 19;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Código";
             // 
             // lstBxURL
@@ -254,7 +254,7 @@
             this.lstBxURL.Location = new System.Drawing.Point(53, 393);
             this.lstBxURL.Name = "lstBxURL";
             this.lstBxURL.Size = new System.Drawing.Size(732, 84);
-            this.lstBxURL.TabIndex = 36;
+            this.lstBxURL.TabIndex = 9;
             // 
             // btnPlus
             // 
@@ -268,7 +268,7 @@
             this.btnPlus.Location = new System.Drawing.Point(411, 352);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(40, 40);
-            this.btnPlus.TabIndex = 37;
+            this.btnPlus.TabIndex = 8;
             this.btnPlus.UseVisualStyleBackColor = false;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
@@ -284,7 +284,7 @@
             this.BtnDelete.Location = new System.Drawing.Point(464, 352);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(40, 40);
-            this.BtnDelete.TabIndex = 40;
+            this.BtnDelete.TabIndex = 10;
             this.BtnDelete.UseVisualStyleBackColor = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
@@ -297,7 +297,7 @@
             this.lblCaracteres.Location = new System.Drawing.Point(732, 220);
             this.lblCaracteres.Name = "lblCaracteres";
             this.lblCaracteres.Size = new System.Drawing.Size(0, 15);
-            this.lblCaracteres.TabIndex = 41;
+            this.lblCaracteres.TabIndex = 0;
             // 
             // FrmAdd
             // 

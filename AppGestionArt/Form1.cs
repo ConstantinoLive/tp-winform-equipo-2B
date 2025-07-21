@@ -14,10 +14,15 @@ namespace AppGestionArt
 {
     public partial class Form1 : Form
     {
+        private List<Imagenes> listaImagenesActual;
+        private int indiceImagenActual;
+        private int idArticuloActual;
 
         public Form1()
         {
             InitializeComponent();
+            indiceImagenActual = 0;
+            listaImagenesActual = new List<Imagenes>();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -46,7 +51,7 @@ namespace AppGestionArt
             {
                 pcbArticulos.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pcbArticulos.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
             }
@@ -56,7 +61,50 @@ namespace AppGestionArt
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             Articulo ArticuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            CargarImagen(ArticuloSeleccionado.UrlImagen);
+            //CargarImagen(ArticuloSeleccionado.UrlImagen);
+            idArticuloActual = ArticuloSeleccionado.IdProductos;
+            
+            CargarImagenesArticulo(idArticuloActual);
+            
+            MostrarImagenActual();
+        }
+
+        private void CargarImagenesArticulo(int idArticulo)
+        {
+            ImagenesDatos imgDatos = new ImagenesDatos();
+            listaImagenesActual = imgDatos.listarImagenes()
+                .Where(img => img.IdArticulo == idArticulo).ToList();
+
+            indiceImagenActual = 0;
+      
+            if (listaImagenesActual.Count <= 1)
+            {
+                BtnLeft.Enabled = false;
+                BtnRight.Enabled = false;
+            }
+            else
+            {
+                BtnLeft.Enabled = true;
+                BtnRight.Enabled = true;
+            }
+        }
+
+        private void MostrarImagenActual()
+        {
+            if (listaImagenesActual.Count == 0)
+            {
+                pcbArticulos.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
+                return;
+            }
+
+            try
+            {
+                pcbArticulos.Load(listaImagenesActual[indiceImagenActual].ImagenUrl);
+            }
+            catch (Exception)
+            {
+                pcbArticulos.Load("https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg");
+            }
         }
 
         private void btnserch_Click(object sender, EventArgs e)
@@ -100,6 +148,28 @@ namespace AppGestionArt
             FrmModify frmModify = new FrmModify();  
             frmModify.ShowDialog();
             Cargar();
+        }
+
+        private void BtnLeft_Click(object sender, EventArgs e)
+        {
+            if (listaImagenesActual.Count <= 1) return;
+
+            indiceImagenActual--;
+            if (indiceImagenActual < 0)
+                indiceImagenActual = listaImagenesActual.Count - 1;
+
+            MostrarImagenActual();
+        }
+
+        private void BtnRight_Click(object sender, EventArgs e)
+        {
+            if (listaImagenesActual.Count <= 1) return;
+
+            indiceImagenActual++;
+            if (indiceImagenActual >= listaImagenesActual.Count)
+                indiceImagenActual = 0;
+
+            MostrarImagenActual();
         }
     }
 }
