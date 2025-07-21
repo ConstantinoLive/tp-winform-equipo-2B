@@ -49,6 +49,8 @@
             this.lblResultadoCategoria = new System.Windows.Forms.Label();
             this.lblResultadoPrecio = new System.Windows.Forms.Label();
             this.tBoxResultadoDescripcion = new System.Windows.Forms.TextBox();
+            this.BtnRight = new System.Windows.Forms.Button();
+            this.BtnLeft = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSerch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -292,12 +294,46 @@
             this.tBoxResultadoDescripcion.Size = new System.Drawing.Size(236, 133);
             this.tBoxResultadoDescripcion.TabIndex = 19;
             // 
+            // BtnRight
+            // 
+            this.BtnRight.BackColor = System.Drawing.Color.Transparent;
+            this.BtnRight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRight.FlatAppearance.BorderSize = 0;
+            this.BtnRight.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnRight.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRight.Image = ((System.Drawing.Image)(resources.GetObject("BtnRight.Image")));
+            this.BtnRight.Location = new System.Drawing.Point(635, 486);
+            this.BtnRight.Name = "BtnRight";
+            this.BtnRight.Size = new System.Drawing.Size(36, 36);
+            this.BtnRight.TabIndex = 21;
+            this.BtnRight.UseVisualStyleBackColor = false;
+            this.BtnRight.Click += new System.EventHandler(this.BtnRight_Click);
+            // 
+            // BtnLeft
+            // 
+            this.BtnLeft.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLeft.FlatAppearance.BorderSize = 0;
+            this.BtnLeft.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLeft.Image = ((System.Drawing.Image)(resources.GetObject("BtnLeft.Image")));
+            this.BtnLeft.Location = new System.Drawing.Point(552, 486);
+            this.BtnLeft.Name = "BtnLeft";
+            this.BtnLeft.Size = new System.Drawing.Size(36, 36);
+            this.BtnLeft.TabIndex = 20;
+            this.BtnLeft.UseVisualStyleBackColor = false;
+            this.BtnLeft.Click += new System.EventHandler(this.BtnLeft_Click);
+            // 
             // FrmSerch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(844, 565);
+            this.Controls.Add(this.BtnRight);
+            this.Controls.Add(this.BtnLeft);
             this.Controls.Add(this.tBoxResultadoDescripcion);
             this.Controls.Add(this.lblResultadoPrecio);
             this.Controls.Add(this.lblResultadoCategoria);
@@ -357,5 +393,7 @@
         private System.Windows.Forms.Label lblResultadoCategoria;
         private System.Windows.Forms.Label lblResultadoPrecio;
         private System.Windows.Forms.TextBox tBoxResultadoDescripcion;
+        private System.Windows.Forms.Button BtnRight;
+        private System.Windows.Forms.Button BtnLeft;
     }
 }
