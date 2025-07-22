@@ -124,13 +124,13 @@ namespace AppGestionArt
         {
             CnxnTbArticulo articulosDatos = new CnxnTbArticulo();
             CnxnTbImagenes imagenesDatos = new CnxnTbImagenes();
-            Articulo seleccionado = new Articulo();
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            
             try
             {
-                DialogResult respuesta = MessageBox.Show("¿De verdad desea eliminar el artículo?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult respuesta = MessageBox.Show($"¿De verdad desea eliminar el artículo  '{seleccionado.Nombre}'?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (respuesta == DialogResult.Yes)
                 {
-                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                     articulosDatos.eliminarFisico(seleccionado.IdProductos);
                     imagenesDatos.eliminarFisico(seleccionado.IdProductos);
                     Cargar();

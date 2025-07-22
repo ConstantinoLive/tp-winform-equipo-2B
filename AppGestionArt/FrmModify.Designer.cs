@@ -955,8 +955,11 @@
             this.tabModify.Controls.Add(this.tabPage3);
             this.tabModify.Controls.Add(this.tabPage4);
             this.tabModify.Location = new System.Drawing.Point(12, 12);
+            this.tabModify.MaximumSize = new System.Drawing.Size(673, 580);
+            this.tabModify.MinimumSize = new System.Drawing.Size(673, 580);
             this.tabModify.Multiline = true;
             this.tabModify.Name = "tabModify";
+            this.tabModify.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabModify.SelectedIndex = 0;
             this.tabModify.Size = new System.Drawing.Size(673, 580);
             this.tabModify.TabIndex = 0;
@@ -970,7 +973,9 @@
             this.Controls.Add(this.tabModify);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(717, 651);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(717, 651);
             this.Name = "FrmModify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Modificar";
